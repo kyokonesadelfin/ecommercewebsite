@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DATA from '../Data';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addItem, delItem } from '../redux/actions/index'
 import { NavLink } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -14,9 +14,10 @@ import Swal from 'sweetalert2';
 const Product = (props) => {
 
 	const [cartBtn, setCartBtn] = useState("Add to Cart")
+	const [auth, setauth] = useState(false);
+    const [auth1, setauth1] = useState(true);
+
 	
-
-
 	const proid = useParams();
 	const proDetail = DATA.filter(x=>x.id == proid.id)
 	const product = proDetail[0];
@@ -43,6 +44,37 @@ const Product = (props) => {
 		}
 	}
 
+	const isLoggedin = async () => {
+	      try {
+	        const res = await fetch('/auth', {
+	          method : "GET",
+	          headers : {
+	            Accept : "application/json",
+	            "Content-Type" : "application/json"
+	          },
+	        credentials : "include"
+	        });
+	             if(res.status === 200) {
+	               setauth(true)
+	               setauth1(false)
+	            }
+
+	            if(res.status === 401) {
+	              setauth(false)
+	              setauth1(true)
+	             }
+
+	          } catch (error) {
+	            console.log(error)
+
+	          }
+	        }
+
+	        useEffect(() => {
+	          isLoggedin();
+	        }, []);
+
+
 
 
 	return (
@@ -57,8 +89,17 @@ const Product = (props) => {
 					<hr/>
 					<h2 className="my-2 text-danger" id="prod">${product.price}</h2>
 					<p className="lead fw-bold" id="prod">{product.desc}</p>
-					<button onClick={()=>handleCart(product)} className="btn btn-primary my-3">{cartBtn}</button>
-					<NavLink to="/cart" className="btn btn-outline-primary ">Go to Cart</NavLink>
+					{ auth ? 
+					           <>
+					           <button onClick={()=>handleCart(product)} className="btn btn-primary my-3">{cartBtn}</button>
+					           <NavLink to="/cart" className="btn btn-outline-primary ">Go to Cart</NavLink>
+					           
+					           </> 
+					           :  
+					           <>
+					           <NavLink to="/" className="btn btn-outline-primary mt-5 fw-bold">Login to Buy</NavLink>
+					           </>
+					       }
 				</div>
 			</div>
 		</div>
