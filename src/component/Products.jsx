@@ -16,7 +16,7 @@ const Products = () => {
 						<div className="card-body text-center">
 							<h5 className="card-title fw-bolder" id="para">{item.title}</h5>
 							<p className="lead fw-bold" id="para">${item.price}</p>
-							<NavLink to={`products/${item.id}`} className="btn btn-danger fw-bolder px-2"id="para" ><i className="fa fa-shopping-cart me-1"></i>Buy Now</NavLink>
+							<NavLink to={`products/${item.id}`} className="btn btn-outline-danger fw-bolder px-2"id="para" ><i className="fa fa-shopping-cart me-1"></i>Buy Now</NavLink>
 	
 						</div>
 					</div>		

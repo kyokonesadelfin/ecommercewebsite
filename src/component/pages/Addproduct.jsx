@@ -155,7 +155,7 @@ const Addproduct = () => {
 			      </div>
 
 			      <h2 className="d-flex justify-content-center mt-5 pt-2">Add Product</h2>
-			      <div className="table-responsive">
+			      <div className="table-responsive m-5 p-4">
 			      	<form onSubmit={handleSubmit} className="justify-content-center mb-5 p-3">
 			      		<div className="mb-3 ">
 			      		  <label for="formFile" className="form-label">Product Image:</label>

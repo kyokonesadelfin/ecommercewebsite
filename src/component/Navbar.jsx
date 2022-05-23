@@ -42,9 +42,9 @@ const Navbar = (props) => {
 			         		</>
 			         		:
 			         		<>
-			         		<NavLink to="/dashboard" className="nav-link fw-bolder">
+			         		<NavLink to="/dashboard" className="nav-link fw-bolder" id="bar">
 			         		<i className="fa fa-folder-open me-2"></i>Admin Dashboard</NavLink>
-			         		<NavLink to="/logout" className="nav-link fw-bolder">
+			         		<NavLink to="/logout" className="nav-link fw-bolder" id="bar">
 			         		<i className="fa fa-sign-out me-2"></i>Logout</NavLink>
 			         		<CartBtn/>
 			         		</>

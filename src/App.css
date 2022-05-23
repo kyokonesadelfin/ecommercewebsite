@@ -36,7 +36,7 @@ html{
 #cards {
   transition: all 0.5s ease;
   background-color: turquoise;
-  height: 23rem;
+  height: 24rem;
 
 }
 
@@ -62,6 +62,8 @@ html{
 #link{
   color: steelblue;
   font-weight: bolder;
+  font-size: 1.1rem;
+  letter-spacing: .12rem;
 }
 
 #link:hover{
@@ -72,8 +74,9 @@ html{
 /*Navbar Main Text */
 #main{
   font-family: Arial Narrow, sans-serif;
-  font-style: italic;
+  font-style: oblique;
   background-color: turquoise;
+  letter-spacing: .15rem;
 }
 
 #main:hover{
@@ -97,4 +100,22 @@ html{
 
 #prod{
   font-family: century;
+}
+
+#checkout{
+  letter-spacing: .75rem;
+}
+
+#bar{
+  color: darkslategray;
+  font-size: 1rem;
+}
+
+#cartbtn{
+  color: darkslategray;
+  font-size: 1rem;
+}
+
+#logintobuy{
+  letter-spacing: 1rem;
 }

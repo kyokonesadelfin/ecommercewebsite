@@ -79,10 +79,10 @@ const Product = (props) => {
 
 	return (
 		<>
-		<div className="container my-5 py-3 mx-5 px-5 mt-5 pt-5">
+		<div className="container my-5 py-3 mx-5 px-5 mt-5 pt-5 mb-5 pb-5">
 			<div className="row">
 				<div className="col-md-6 d-flex justify-content-center mx-auto product">
-					<img src={product.image} alt={product.title} height="275px"/>
+					<img src={product.image} alt={product.title} height="400px"/>
 				</div>
 				<div className="col-md-6 d-flex flex-column justify-content-center">
 					<h1 className="display-9" id="prod">{product.title}</h1>
@@ -97,7 +97,7 @@ const Product = (props) => {
 					           </> 
 					           :  
 					           <>
-					           <NavLink to="/" className="btn btn-outline-primary mt-5 fw-bold">Login to Buy</NavLink>
+					           <NavLink to="/" className="btn btn-outline-dark mt-5 fw-bold" id="logintobuy">LOGIN TO BUY</NavLink>
 					           </>
 					       }
 				</div>

@@ -63,7 +63,7 @@ const Footer = () => {
 
 	return (
 		<div>
-			<footer className="footer text-white bg-dark pt-3" id="para">
+			<footer className="footer text-white bg-dark pt-3 mt-5" id="para">
 				<div className="container pt-3">
 						<div className="row">
 							<div className="col-3" id="para">
