@@ -46,7 +46,7 @@ const Product = (props) => {
 
 	const isLoggedin = async () => {
 	      try {
-	        const res = await fetch('/auth', {
+	        const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', {
 	          method : "GET",
 	          headers : {
 	            Accept : "application/json",
@@ -82,7 +82,7 @@ const Product = (props) => {
 		<div className="container my-5 py-3 mx-5 px-5 mt-5 pt-5 mb-5 pb-5">
 			<div className="row">
 				<div className="col-md-6 d-flex justify-content-center mx-auto product">
-					<img src={product.image} alt={product.title} height="400px"/>
+					<img src={product.image} alt={product.title} height="300px"/>
 				</div>
 				<div className="col-md-6 d-flex flex-column justify-content-center">
 					<h1 className="display-9" id="prod">{product.title}</h1>

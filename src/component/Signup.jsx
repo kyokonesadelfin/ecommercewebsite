@@ -29,7 +29,7 @@ const Signup = () => {
 		//Store Object Data into Variables
 		const {fname, lname, email, password} = user;
 		try {
-			const res = await fetch('/signup', {
+			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/signup', {
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"

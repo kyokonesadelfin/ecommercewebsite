@@ -26,7 +26,7 @@ const Contact = () => {
 		//Store Object Data into Variables
 		const {name, email, message} = msg;
 		try {
-			const res = await fetch('/message', {
+			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/message', {
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"
@@ -67,8 +67,8 @@ const Contact = () => {
 				<div className="container my-5 py-5 mb-5 pb-5">
 					<div className="row">
 						<div className="col-12">
-							<h3 className="fs-5 text-center mb-0" id="para">Contact Us</h3>
-							<h1 className="display-6 text-center mb-4" id="para">Have Some <b>Question?</b> </h1>
+							<h3 className="display-6 fs-5 text-center mb-0 fw-bolder" id="para">Contact Us</h3>
+							<h1 className="display-5 text-center mb-4" id="para">Have Some <b>Question?</b> </h1>
 							<hr className="w-25 mx-auto"/>
 						</div>
 					</div>
