@@ -25,7 +25,7 @@ const Footer = () => {
 		//Store Object Data into Variables
 		const {email} = sub;
 		try {
-			const res = await fetch('/subscribe', {
+			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/subscribe', {
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"
