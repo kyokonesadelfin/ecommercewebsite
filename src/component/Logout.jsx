@@ -10,7 +10,7 @@ const Logout = () => {
 
 	const logout = async () => {
 		try {
-			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/logout', {
+			const res = await fetch('/logout', {
 				method : "GET",
 				headers : {
 					Accept : "application/json",

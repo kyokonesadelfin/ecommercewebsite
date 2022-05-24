@@ -25,7 +25,7 @@ const Addproduct = () => {
 		event.preventDefault();
 		const { title, price, desc, image, stocks} = product;
 		try {
-				 await fetch('https://whispering-gorge-87073.herokuapp.com/products/addProduct', {
+				 await fetch('/products/addProduct', {
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"

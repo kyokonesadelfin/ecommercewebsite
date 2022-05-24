@@ -46,7 +46,7 @@ const Product = (props) => {
 
 	const isLoggedin = async () => {
 	      try {
-	        const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', {
+	        const res = await fetch('/auth', {
 	          method : "GET",
 	          headers : {
 	            Accept : "application/json",
