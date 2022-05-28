@@ -74,7 +74,7 @@ const Login = () => {
 
 
 	
-	return (s
+	return (
 		<>
 	
 		<button type="button" className="btn btn-outline-info px-3 py-1 ms-2 fw-bolder" data-bs-toggle="modal" data-bs-target="#loginModal">
