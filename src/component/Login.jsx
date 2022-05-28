@@ -31,6 +31,7 @@ const Login = () => {
 		const {email, password} = user;
 		try {
 			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/login', {
+				mode: 'no-cors',
 				method : "POST",
 				headers : {
 					
@@ -73,7 +74,7 @@ const Login = () => {
 
 
 	
-	return (
+	return (s
 		<>
 	
 		<button type="button" className="btn btn-outline-info px-3 py-1 ms-2 fw-bolder" data-bs-toggle="modal" data-bs-target="#loginModal">
