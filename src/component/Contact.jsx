@@ -27,7 +27,6 @@ const Contact = () => {
 		const {name, email, message} = msg;
 		try {
 			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/message', {
-				mode: 'no-cors',
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"

@@ -52,7 +52,7 @@ const Signup = () => {
 							text: 'You have successfully registered.'
 						}).then((result) =>  {
 							window.location.reload()
-							history.pushState('https://whispering-gorge-87073.herokuapp.com/')
+							history.pushState('/')
 						})			
 			}
 		} catch (error) {
