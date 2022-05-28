@@ -34,7 +34,7 @@ function App() {
                   'Access-Control-Allow-Origin': '*',
                   'Access-Control-Allow-Headers': 'Content-Type',
                   'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
-                  'Authorization': 'Bearer key',
+                  'Authorization': 'Bearer key'
         },
         credentials : "include"
       });
