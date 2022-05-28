@@ -55,8 +55,8 @@ const Login = () => {
 							text: 'You have inserted the correct credentials'
 						}).then((result) =>  {
 						if(result.isConfirmed){
-							window.location.reload();
 							history.push('https://whispering-gorge-87073.herokuapp.com/')
+							window.location.reload();
 						}
 				})
 				
