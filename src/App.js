@@ -30,7 +30,8 @@ function App() {
         method : "GET",
         headers : {
           Accept : "application/json",
-          "Content-Type" : "application/json"
+          "Content-Type" : "application/json",
+          "Access-Control-Allow-Origin": "https://whispering-gorge-87073.herokuapp.com/"
         },
         credentials : "include"
       });
