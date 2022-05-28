@@ -26,7 +26,7 @@ function App() {
 
   const isLoggedIn = async () => {
     try {
-      const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', { mode: 'no-cors' }{
+      const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', { mode: 'no-cors' },  {
         method : "GET",
         headers : {
           Accept : "application/json",
