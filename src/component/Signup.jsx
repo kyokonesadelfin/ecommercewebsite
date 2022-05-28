@@ -33,7 +33,11 @@ const Signup = () => {
 				mode: 'no-cors',
 				method : "POST",
 				headers : {
-					"Content-Type" : "application/json"
+					"Content-Type" : "application/json",
+					'Access-Control-Allow-Origin': '*',
+					'Access-Control-Allow-Headers': 'Content-Type',
+					'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+					'Authorization': 'Bearer key'
 				},
 				body : JSON.stringify({
 					fname, lname, email, password
@@ -53,7 +57,7 @@ const Signup = () => {
 							text: 'You have successfully registered.'
 						}).then((result) =>  {
 							window.location.reload()
-							history.pushState('/')
+							history.pushState('https://whispering-gorge-87073.herokuapp.com/')
 						})			
 			}
 		} catch (error) {
