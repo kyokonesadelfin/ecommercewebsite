@@ -30,6 +30,7 @@ const Signup = () => {
 		const {fname, lname, email, password} = user;
 		try {
 			const res = await fetch('https://whispering-gorge-87073.herokuapp.com/signup', {
+				mode: 'no-cors',
 				method : "POST",
 				headers : {
 					"Content-Type" : "application/json"
