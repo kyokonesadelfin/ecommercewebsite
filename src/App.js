@@ -26,12 +26,15 @@ function App() {
 
   const isLoggedIn = async () => {
     try {
-      const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', {
+      const res = await fetch('https://whispering-gorge-87073.herokuapp.com/auth', { mode: 'no-cors' }{
         method : "GET",
         headers : {
           Accept : "application/json",
           "Content-Type" : "application/json",
-          "Access-Control-Allow-Origin": "https://whispering-gorge-87073.herokuapp.com/"
+                  'Access-Control-Allow-Origin': '*',
+                  'Access-Control-Allow-Headers': 'Content-Type',
+                  'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+                  'Authorization': 'Bearer key',
         },
         credentials : "include"
       });
