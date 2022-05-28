@@ -56,7 +56,7 @@ const Login = () => {
 						}).then((result) =>  {
 						if(result.isConfirmed){
 							window.location.reload();
-							history.push('/')
+							history.push('https://whispering-gorge-87073.herokuapp.com/')
 						}
 				})
 				

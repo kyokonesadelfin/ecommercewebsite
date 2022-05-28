@@ -28,7 +28,7 @@ const Logout = () => {
 						text: 'You are now logged out.'
 						}).then((result) => {
 							if(result.isConfirmed){
-							history.push('/');
+							history.push('https://whispering-gorge-87073.herokuapp.com/');
 							window.location.reload();
 												
 						}
